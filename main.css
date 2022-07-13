@@ -1,0 +1,80 @@
+:root {
+    --darkblue: #0a4072;
+    --white: #FFFFFF;
+    --lightblue: #a4cef5;
+}
+
+body {
+    background: var(--bg);
+    color: var(--fontColor);
+    font-family: helvetica;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: var(--bg);
+    color: var(--fontColor);
+
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #a4cef5;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+.tab button:hover{
+    background-color: #FFFFFF;
+}
+.tab button.active {
+    background-color:#0a4072;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    border-radius: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+
+.light-theme {
+    --bg: var(--lightblue);
+    --fontColor: var(--darkblue);
+    --btnBg: var(--white);
+    --btnFontColor: var(--darkblue);
+    --navbaraFontColor: var(--darkblue);
+}
+
+.dark-theme {
+    --bg: var(--darkblue);
+    --fontColor: var(--lightblue);
+    --btnBg: var(--lightblue);
+    --btnFontColor: var(--darkblue);
+    --navbaraFontColor: var(--lightblue);
+}
