@@ -61,6 +61,15 @@ body {
     color: var(--btnFontColor);
     background-color: var(--btnBg);
 }
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--footerBg);
+    color: white;
+    text-align: center;
+}
 
 
 .light-theme {
@@ -69,6 +78,7 @@ body {
     --btnBg: var(--white);
     --btnFontColor: var(--darkblue);
     --navbaraFontColor: var(--darkblue);
+    --footerBg: var(--darkblue);
 }
 
 .dark-theme {
@@ -77,4 +87,5 @@ body {
     --btnBg: var(--lightblue);
     --btnFontColor: var(--darkblue);
     --navbaraFontColor: var(--lightblue);
+    --footerBg: var(--lightblue);
 }
