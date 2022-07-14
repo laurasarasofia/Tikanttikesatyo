@@ -10,23 +10,59 @@ body {
     font-family: helvetica;
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Column container */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  /* Sidebar/left column */
+  .side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #f1f1f1; /* Grey background color */
+    padding: 20px; /* Some padding */
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%; /* Set the width of the main content */
+    background-color: white; /* White background color */
+    padding: 20px; /* Some padding */
+  }
+
 .header {
-    padding: 80px;
-    text-align: center;
     background: var(--bg);
     color: var(--fontColor);
 
 }
 
-.header h1 {
-    font-size: 40px;
+.header img {
+    width: 1024px;
+    height: 256px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header .headertext {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 
 .tab {
-    overflow: hidden;
+    float: left;
     border: 1px solid #ccc;
     background-color: #a4cef5;
+    width: 16%;
+
 }
 
 .tab button {
@@ -35,14 +71,17 @@ body {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 16px;
+    width: 100%;
     transition: 0.3s;
 }
-.tab button:hover{
+
+.tab button:hover {
     background-color: #FFFFFF;
 }
+
 .tab button.active {
-    background-color:#0a4072;
+    background-color: #0a4072;
 }
 
 .tabcontent {
@@ -50,7 +89,7 @@ body {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-  }
+}
 
 .btn {
     position: absolute;
@@ -61,7 +100,8 @@ body {
     color: var(--btnFontColor);
     background-color: var(--btnBg);
 }
-.footer{
+
+.footer {
     position: fixed;
     left: 0;
     bottom: 0;
