@@ -4,76 +4,66 @@
     --lightblue: #a4cef5;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: var(--bg);
     color: var(--fontColor);
     font-family: helvetica;
 }
 
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Column container */
-  .row {
+.header {
+    padding: 50px;
+    background-image: url(metalli.jpg);
+    text-align: center;
+
+}
+
+
+/* Column container */
+.content {
     display: flex;
     flex-wrap: wrap;
-  }
-  
-  /* Create two unequal columns that sits next to each other */
-  /* Sidebar/left column */
-  .side {
-    flex: 30%; /* Set the width of the sidebar */
-    background-color: #f1f1f1; /* Grey background color */
-    padding: 20px; /* Some padding */
-  }
-  
-  /* Main column */
-  .main {
-    flex: 70%; /* Set the width of the main content */
-    background-color: white; /* White background color */
-    padding: 20px; /* Some padding */
-  }
+    align-items: stretch;
+}
 
-.header {
-    background: var(--bg);
-    color: var(--fontColor);
+.side {
+    
+    /* Set the width of the sidebar */
+    background-color: #d1d9f3;
+    padding: 20px;
 
 }
 
-.header img {
-    width: 1024px;
-    height: 256px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
+.main {
+    flex: 300px;
+    /* Set the width of the main content */
+    background-color: #d1d9f3;
+    padding: 20px;
+    /* Some padding */
 }
-
-.header .headertext {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
 
 .tab {
+    
     float: left;
     border: 1px solid #ccc;
     background-color: #a4cef5;
-    width: 16%;
+    display: inline-flex;
+    flex-direction: row;
 
 }
 
 .tab button {
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 16px;
-    width: 100%;
+    padding: 10px;
     transition: 0.3s;
+    font-weight: bold;
+    width: 110px;
 }
 
 .tab button:hover {
@@ -86,10 +76,70 @@ body {
 
 .tabcontent {
     display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
+    padding-top: 30px;
+    
+    text-align: left;
 }
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .edellinen, .seuraava {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .edellinen:hover, .seuraava:hover {
+    background-color: rgba(243, 17, 17, 0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #d21313;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #ef1313;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
 
 .btn {
     position: absolute;

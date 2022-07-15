@@ -13,35 +13,51 @@
 
 <body class="light-theme">
     <div class="header">
-        <img src="metalli.jpg" alt="hero-image">
         <div class="headertext">
             <h1>Tikantti Oy</h1>
             <h2>Osavalmistusta ja Kokoonpano palvelua</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="content">
         <div class="side">
-            <h>testi</h>
+            <h3>CEO Asko Silvala</h3>
+            <img src="asko.jpg" alt="asko" style="width:128px;height:auto;">
+            <p>41 vuoden työkokemuksella</p>
         </div>
         <div class="main">
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'Koti')" id="defaultOpen">Koti</button>
-                <button class="tablinks" onclick="openTab(event, 'Yhteystiedot')" id="defaultOpen">Yhteystiedot</button>
+                <button class="tablinks" onclick="openTab(event, 'Yhteystiedot')" >Yhteystiedot</button>
                 <button class="tablinks" onclick="openTab(event, 'Kuvagalleria')">Kuvagalleria</button>
             </div>
             <div id="Koti" class="tabcontent">
                 <p>Osien valmistusta ja kokoonpanoa Ikaalisista.</p>
             </div>
             <div id="Yhteystiedot" class="tabcontent">
-                <p>sähköposti: info@tikantti.fi</p>
-                <p>puhelinnumero: 045 249 8490</p>
-                <p>osoite: Tikantti Oy Hakalankatu 18 39500 Ikaalinen</p>
+                <p>info@tikantti.fi</p>
+                <p>045 249 8490</p>
+                <p>Tikantti Oy </p>
+                <p>Hakalankatu 18</p>
+                <p>39500 Ikaalinen</p>
             </div>
 
             <div id="Kuvagalleria" class="tabcontent">
-                <h3>Kuvia:</h3>
-                <img src="talli.jpg" alt="talli" style="width:246px;height:auto;">
-                <img src="tikkaat.jpg" alt="tikkaat" style="width:246px;height:auto;">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="talli.jpg" alt="talli" style="width:246px;height:auto;">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="tikkaat.jpg" alt="tikkaat" style="width:246px;height:auto;">
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="skanneri.jpg" alt="skanneri" style="width:246px;height:auto;">
+                    </div>
+                    <a class="edellinen" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="seuraava" onclick="plusSlides(1)">&#10095;</a>
+                </div>
             </div>
         </div>
     </div>
